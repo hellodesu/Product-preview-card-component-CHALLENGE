@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    direction: ltr;
+    user-select: none;
+}
+.holo{
+    height: 100vh;
+    inset: 0;
+    opacity: 0.5;
+    position: absolute;
+}
+:root {
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+    --Dark_cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very_dark_blue: hsl(212, 21%, 14%);
+    --Dark_grayish_blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Cream);
+}
+main{
+    border-radius: 10px;
+    background-color: var(--White);
+    height: 450px;
+    width: 600px;
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: 100% ;
+}
+img.product{
+    height:100%;
+    background-size: cover;
+}
+section{
+    padding: 32px;
+}
+header {
+    color: var(--Dark_grayish_blue);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 13px;
+}
+h2{
+        font-weight: 700;
+        font-size: 32px;
+        font-family: 'Fraunces', serif;
+        margin: 20px 0px;
+        line-height: 32px;
+}
+p{
+    font-size: 13px;
+    font-weight: 700;
+    margin: 1.5rem 0px;
+    line-height: 23px;
+    color: var(--Dark_grayish_blue);
+}
+div{
+    margin-bottom: auto;
+    display: flex;
+    align-items: center;
+}
+span.num1{
+    font-size: 33px;
+    font-family: 'Fraunces';
+    font-weight: 400;
+    color: var(--Dark_cyan);
+}
+span.num2{
+    text-decoration: line-through;
+    font-weight: 700;
+    margin: auto;
+    color: var(--Dark_grayish_blue);
+}
+span.icon{
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    background-image: url(./images/icon-cart.svg);
+}
+footer {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 32px;
+    height: 48px;
+    width: 235px;
+    border-radius: 10px;
+    color: var(--White);
+    background-color: var(--Dark_cyan);
+}
+footer p{
+    font-weight: 700;
+    color: var(--White);
+}
+footer:active{
+    background-color: hsl(158, 35%, 15%);
+}
